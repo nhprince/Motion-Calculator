@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Motion Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scrpt.js">
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>ULTIMATE MOTION CALCULATOR</h1>
+        <form id="motionForm">
+            <div class="form-group">
+                <label for="initialVelocity">Initial Velocity (m/s)</label>
+                <input type="number" id="initialVelocity" placeholder="Velocity at the start of motion [m/s]">
+            </div>
+            <div class="form-group">
+                <label for="finalVelocity">Final Velocity (m/s)</label>
+                <input type="number" id="finalVelocity" placeholder="Velocity at the end of motion [m/s]">
+            </div>
+            <div class="form-group">
+                <label for="acceleration">Acceleration (m/s²)</label>
+                <input type="number" id="acceleration" placeholder="Rate of change of velocity [m/s²]">
+            </div>
+            <div class="form-group">
+                <label for="time">Time (s)</label>
+                <input type="number" id="time" placeholder="Duration of motion [s]">
+            </div>
+            <div class="form-group">
+                <label for="displacement">Displacement (m)</label>
+                <input type="number" id="displacement" placeholder="Distance traveled [m]">
+            </div>
+            <div class="form-group">
+                <label for="option">Calculate:</label>
+                <select id="option">
+                    <option value="">Select an option</option>
+                    <option value="finalVelocity">Final Velocity</option>
+                    <option value="initialVelocity">Initial Velocity</option>
+                    <option value="acceleration">Acceleration</option>
+                    <option value="time">Time</option>
+                    <option value="displacement">Displacement</option>
+                </select>
+            </div>
+            <button type="button" id="calculateButton">Calculate</button>
+        </form>
+        <p>Created and Owned by NH Prince</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
